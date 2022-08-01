@@ -11,3 +11,5 @@ To get started make sure that this repo has been downloaded.  Once downloaded ve
 - css and img folders
   
 If all is available use your favorite text editor and open up the create-website.yml file.
+  
+![alt text](image.jpg)
