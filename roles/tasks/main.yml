@@ -1,0 +1,18 @@
+# this is an example of building a website
+# only thing you really need is to make sure ports are open
+# and httpd is installed so this will be short
+######### dependencies ###########
+#
+# python <= 2.6
+# python-dnf
+#
+#
+##################################
+
+- name: copy files from local to server
+  ansible.builtin.copy:
+    src: ./files
+    dest: "{{ hostname }}:/var/www/html"
+    owner: coolguy
+    group: coolguy
+    mode: '0755'
