@@ -1,14 +1,25 @@
+---
 # create a website and make sure its up and running
 
-- name: website build
+- name: create a website
   host: all
-  gather_facts: no
-  
+  gather_facts: true
+
   tasks:
-    - name: copy files to www
+    - name: copy site files to www
       include-role:
         name: create-website
-    
-    - name: restart httpd service
-    
-    - name: make sure ports are open
+
+    - name: copy updated httpd files to conf.d and conf
+      ansible.builtin.file:
+      src: {{ item.src }}
+      dest: {{ item.dest }}
+      with-items:
+        - { src: './files/config/httd.conf', dest: '/etc/httpd/conf/' }
+        - { src: './files/config/ssl.conf', dest: '/etc/httpd/conf.d/' }
+
+    - name: make sure our port 8080 is open
+      ansible.posix.firewalld:
+        port: 8080/tcp
+        permanent: yes
+        state: enabled

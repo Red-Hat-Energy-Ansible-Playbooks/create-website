@@ -1,0 +1,16 @@
+---
+
+# create a website and make sure its up and running
+
+- name: website build
+  host: all
+  gather_facts: no
+  
+  tasks:
+    - name: copy files to www
+      include-role:
+        name: create-website
+    
+    - name: restart httpd service
+    
+    - name: make sure ports are open
