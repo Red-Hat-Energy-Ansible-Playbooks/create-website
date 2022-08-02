@@ -1,3 +1,5 @@
+<script> link="rel/stylesheet" href="./readme.css"</script>
+
 # create-website
 demo website creation
 
