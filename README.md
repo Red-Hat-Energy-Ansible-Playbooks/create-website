@@ -1,5 +1,3 @@
-<script> link="rel/stylesheet" href="./readme.css"</script>
-
 # create-website
 demo website creation
 
@@ -16,7 +14,6 @@ If all is available use your favorite text editor and open up the create-website
 
 Here we have a clean sheet of paper to work with.  Things to note:  a play always startes with ```---```.  you could separate plays in the same file simply by adding ```---``` between groups of tasks you want to separate.  
 
-<img src="./.md_img/markup-book.png.png" width="200">
 ![markup start](./.md_img/markup-book.png)
 
 First we need to start our playbook.  It always starts with a ```- name:```
