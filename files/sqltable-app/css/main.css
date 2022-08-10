@@ -1,0 +1,100 @@
+body {
+    font-family: 'red hat text', Helvetica, sans-serif;
+    width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    font-size: large;
+}
+
+hr {
+    margin: 20px;
+}
+
+.section {
+    margin: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 400px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+}
+
+tr, thead {
+    background-color: #EE0000;
+    color: #ffffff;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+    color: #FE0000;
+    font-size: x-large;
+}
+
+td {
+    background-color: #f3f3f3;
+}
+
+th, td {
+    padding: 12px 15px;
+}
+
+td {
+    font-weight: lighter;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.images {
+    display: block;
+    text-align: center;
+}
+
+.ansible-logo {
+    height: 50px;
+    padding-bottom: 25px;
+}
+
+.rh-logo {
+    height: 100px;
+    padding-left: 7px;
+}
+
+.plus {
+    height: 30px;
+    margin: 0;
+    padding-bottom: 35px;
+}
+
+.members {
+    height: 50px;
+    flex: auto;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+p {
+    position: relative;
+        float: left;
+    font-size: 11px;
+    margin: 0px 5px 0px 5px;
+}

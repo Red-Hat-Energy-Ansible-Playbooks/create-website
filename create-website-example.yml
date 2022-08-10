@@ -5,6 +5,9 @@
   host: all
   gather_facts: true
 
+  collections:
+    - ansible.posix
+
   tasks:
     - name: copy site files to www
       include-role:
